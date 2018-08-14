@@ -1,0 +1,27 @@
+html, body {
+	width: 100px;
+}
+
+.button {
+	margin: 2% auto;
+	padding: 5px;
+	text-align: center;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+
+.clipboard:hover {
+	background-color: #CFF2F2;
+}
+
+.clipboard {
+	background-color: #E5F2F2;
+}
+
+.clear {
+	background-color: #FBFBC9;
+}
+
+.clear:hover {
+	background-color: #EAEAC9;
+}

@@ -1,0 +1,44 @@
+{
+
+  "manifest_version": 2,
+  "name": "VicoSAC",
+  "version": "1.0",
+ 
+  "description": "Cargar datos de Entel (Java) a VicoSys.",
+  "homepage_url": "https://www.carlitoxenlaweb.com/",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "carlos.martinez@vconnections.pe"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://vicosys.ddns.net/*",
+        "*://192.168.0.24/*",
+        "*://localhost/public/*",
+        "*://retail.entel.pe/*"
+      ]
+    }
+  ],
+
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/icon-32.png",
+    "default_title": "VicoSAC",
+    "default_popup": "app/index.html"
+  }
+
+}
